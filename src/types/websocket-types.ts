@@ -260,16 +260,16 @@ export const Intents = {
 };
 
 // Session事件
-export const SessionEvents = {
-  CLOSED: 'CLOSED',
-  READY: 'READY', // 已经可以通信
-  ERROR: 'ERROR', // 会话错误
-  INVALID_SESSION: 'INVALID_SESSION',
-  RECONNECT: 'RECONNECT', // 服务端通知重新连接
-  DISCONNECT: 'DISCONNECT', // 断线
-  EVENT_WS: 'EVENT_WS', // 内部通信
-  RESUMED: 'RESUMED', // 重连
-  DEAD: 'DEAD', // 连接已死亡，请检查网络或重启
+export enum SessionEvents {
+  CLOSED = 'CLOSED',
+  READY = 'READY', // 已经可以通信
+  ERROR = 'ERROR', // 会话错误
+  INVALID_SESSION = 'INVALID_SESSION',
+  RECONNECT = 'RECONNECT', // 服务端通知重新连接
+  DISCONNECT = 'DISCONNECT', // 断线
+  EVENT_WS = 'EVENT_WS', // 内部通信
+  RESUMED = 'RESUMED', // 重连
+  DEAD = 'DEAD', // 连接已死亡，请检查网络或重启
 };
 
 // ws地址配置

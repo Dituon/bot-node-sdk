@@ -37,6 +37,10 @@ export default class WebsocketClient extends EventEmitter {
     });
   }
 
+  on(eventType: SessionEvents, callback: (data: any) => void): this {
+    return super.on(eventType, callback)
+  }
+
   // 连接
   connect(config: GetWsParam, sessionRecord?: SessionRecord) {
     const event = this;
